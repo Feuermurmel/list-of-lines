@@ -1,3 +1,3 @@
-= LOL: List of Lines Specification
+# LOL: List of Lines Specification
 
 Start here: [Index](specification/index.md)
