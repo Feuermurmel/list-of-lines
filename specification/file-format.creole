@@ -5,7 +5,7 @@ List-of-Lines defines that all `.lol` files are valid [[http://json.org/|JSON]] 
 Following the use of JSON, `.lol` files contain a hierarchy of object of different types. Each of these types are described in their own section in this chapter. An `.lol` file aways contains a single, complete object of type `document`.
 
 
-=== <document>
+=== 'document' Type
 
 {{{
 document := {
