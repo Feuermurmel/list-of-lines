@@ -1,4 +1,4 @@
-# FAQ: Frequently Answered Questions
+= FAQ: Frequently Answered Questions
 
 * Isn't this section normally called Frequenly _Asked_ Questions? :=
 

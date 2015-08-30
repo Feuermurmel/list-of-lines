@@ -5,4 +5,4 @@
 # [[overview.creole|Overview]]
 # [[data-model.creole|Data Model]]
 # [[file-format.creole|File Format]]
-# [[faq.creole|Frequently Answered Questions (FAQ)]]
+# [[faq.creole|FAQ]]
