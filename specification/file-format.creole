@@ -5,6 +5,22 @@ List-of-Lines defines that all `.lol` files are valid [[http://json.org/|JSON]] 
 Following the use of JSON, `.lol` files contain a hierarchy of object of different types. Each of these types are described in their own section in this chapter. An `.lol` file aways contains a single, complete object of type `document`.
 
 
+== Conventions used in examples
+
+
+== Types
+
+=== JSON Types 
+
+The JSON specification defines the 4 types //object//, //array//, //number//, //string//, and the special values `null`, `true` and `false`. In this chapter, `<object>`, `<array>`, `<number>` and `<string>` is used to describe a JSON value of one of these types. Additionally, `<bool>` is used to describe one of the values `true` or `false`.
+
+{{{
+object := // A JSON object containing key-value-pairs.
+array := // A JSON array containing a sequence of values.
+number := // A number in decimal or scientific notation.
+string := // A unicode string.
+bool := true | false
+}}}
 
 
 === 'document' Type
@@ -26,7 +42,24 @@ Contains a number describin
 === 'coordinate' Type
 
 {{{
-coordinate := [] | [<coordinate-number>] | []
+coordinate := 0-coordinate | 1-coordinate | 2-coordinate | 3-coordinate
+
+0-coordinate := []
+
+1-coordinate := [<coordinate-number>] | [<infinity>]
+
+2-coordinate := [<coordinate-number>, <coordinate-number>]
+              | [<infinity>, <coordinate-number>]
+              | [<coordinate-number>, <infinity>]
+
+3-coordinate := [<coordinate-number>, <coordinate-number>, <coordinate-number>]
+              | [<infinity>, <coordinate-number>, <coordinate-number>]
+              | [<coordinate-number>, <infinity>, <coordinate-number>]
+              | [<coordinate-number>, <coordinate-number>, <infinity>]
+
+coordinate-number := <number>
+
+infinity := "inf" | "-inf"
 }}}
 
 
