@@ -8,18 +8,19 @@ Following the use of JSON, `.lol` files contain a hierarchy of object of differe
 === 'document' Type
 
 {{{
-document := {
+<document> := {
 	"version": "1",
 	"dimensions": <dimensions>,
 	"layers": [ <layer> ... ]
 }
+
+<dimensions> := 0 | 1 | 2 | 3
 }}}
 
 
 ==== <dimensions>
 
 {{{
-dimensions := 0 | 1 | 2 | 3
 }}}
 
 
