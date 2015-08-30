@@ -16,9 +16,13 @@ The JSON specification defines the 4 types //object//, //array//, //number//, //
 
 {{{
 object := // A JSON object containing key-value-pairs.
+
 array := // A JSON array containing a sequence of values.
+
 number := // A number in decimal or scientific notation.
+
 string := // A unicode string.
+
 bool := true | false
 }}}
 
