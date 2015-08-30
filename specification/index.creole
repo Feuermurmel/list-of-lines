@@ -2,6 +2,6 @@
 
 == Chapters
 
-# [[data-model.md|Data Mode]]
-# [[file-format.md|File Format]]
-# [[faq.md|Frequently Answered Questions (FAQ)]]
+# [[data-model.creole|Data Model]]
+# [[file-format.creole|File Format]]
+# [[faq.creole|Frequently Answered Questions (FAQ)]]
