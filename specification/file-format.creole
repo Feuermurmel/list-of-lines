@@ -12,17 +12,16 @@ Following the use of JSON, `.lol` files contain a hierarchy of object of differe
 
 === JSON Types 
 
-The JSON specification defines the 4 types //object//, //array//, //number//, //string//, and the special values `null`, `true` and `false`. In this chapter, `<object>`, `<array>`, `<number>` and `<string>` is used to describe a JSON value of one of these types. Additionally, `<bool>` is used to describe one of the values `true` or `false`.
+The JSON specification defines the 4 types //object//, //array//, //number//, //string//, and the special values `null`, `true` and `false`. In this chapter, `<object>`, `<array>`, `<number>` and `<string>` is used to describe a JSON value of one of these types.
+
+Additionally, `<bool>` is used to describe one of the values `true` or `false` and <integer> is used to describe a number which does not have a fractional part. Integers must be written without a decimal point and may not be written in scientific notation.
 
 {{{
 object := // A JSON object containing key-value-pairs.
-
 array := // A JSON array containing a sequence of values.
-
 number := // A number in decimal or scientific notation.
-
+integer := // A number without a fractional part.
 string := // A unicode string.
-
 bool := true | false
 }}}
 
@@ -47,22 +46,17 @@ Contains a number describin
 
 {{{
 coordinate := 0-coordinate | 1-coordinate | 2-coordinate | 3-coordinate
-
 0-coordinate := []
-
 1-coordinate := [<coordinate-number>] | [<infinity>]
-
 2-coordinate := [<coordinate-number>, <coordinate-number>]
               | [<infinity>, <coordinate-number>]
               | [<coordinate-number>, <infinity>]
-
 3-coordinate := [<coordinate-number>, <coordinate-number>, <coordinate-number>]
               | [<infinity>, <coordinate-number>, <coordinate-number>]
               | [<coordinate-number>, <infinity>, <coordinate-number>]
               | [<coordinate-number>, <coordinate-number>, <infinity>]
-
-coordinate-number := <number>
-
+coordinate-number := <number> | [<numerator>, <denominator>]
+numerator
 infinity := "inf" | "-inf"
 }}}
 
