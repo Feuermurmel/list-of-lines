@@ -44,10 +44,19 @@ Contains a number describin
 
 === 'coordinate' Type
 
+* In a 0-dimensional file:
+
 {{{
-coordinate := 0-coordinate | 1-coordinate | 2-coordinate | 3-coordinate
-0-coordinate := []
-1-coordinate := [<coordinate-number>] | [<infinity>]
+coordinate := []
+}}}
+
+* In a 1-dimensional file:
+
+{{{
+coordinate := [<coordinate-number>] | [<infinity>]
+}}}
+
+{{{
 2-coordinate := [<coordinate-number>, <coordinate-number>]
               | [<infinity>, <coordinate-number>]
               | [<coordinate-number>, <infinity>]
@@ -56,17 +65,25 @@ coordinate := 0-coordinate | 1-coordinate | 2-coordinate | 3-coordinate
               | [<coordinate-number>, <infinity>, <coordinate-number>]
               | [<coordinate-number>, <coordinate-number>, <infinity>]
 coordinate-number := <number> | [<numerator>, <denominator>]
-numerator
+numerator := <integer>
+denominator := <integer> // Must be positive.
 infinity := "inf" | "-inf"
 }}}
 
 
-=== 'layer'
+=== 'layer' Type
 
 {{{
 layer := {
 	"name": <string>,
 	"attributes": <attributes>,
-	"simplexes"
+	"cells": [ <cell> ]
 }
+}}}
+
+
+=== 'cell' Type
+
+{{{
+cell := []
 }}}
