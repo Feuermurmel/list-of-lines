@@ -5,26 +5,37 @@ List-of-Lines defines that all `.lol` files are valid [[http://json.org/|JSON]] 
 Following the use of JSON, `.lol` files contain a hierarchy of object of different types. Each of these types are described in their own section in this chapter. An `.lol` file aways contains a single, complete object of type `document`.
 
 
+
+
 === 'document' Type
 
 {{{
-<document> := {
+document := {
 	"version": "1",
-	"dimensions": <dimensions>,
+	"attributes": <attributes>,
+	"dimensions": 0 | 1 | 2 | 3,
+	"coordinates": [ <coordinate> ... ]
 	"layers": [ <layer> ... ]
 }
-
-<dimensions> := 0 | 1 | 2 | 3
-}}}
-
-
-==== <dimensions>
-
-{{{
 }}}
 
 
 Contains a number describin
 
 
-=== `layer`
+=== 'coordinate' Type
+
+{{{
+coordinate := [] | [<coordinate-number>] | []
+}}}
+
+
+=== 'layer'
+
+{{{
+layer := {
+	"name": <string>,
+	"attributes": <attributes>,
+	"simplexes"
+}
+}}}
