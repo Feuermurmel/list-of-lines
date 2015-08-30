@@ -1,3 +1,8 @@
 # File Format
 
-We use [JSON](http://json.org)! And other magic stuff! Yay!
+List-of-Lines defines that all `.lol` files are valid [[http://json.org/|JSON]] files with a specific structure, which is described in this chapter. This chapter makes use of JSON-specific terms such as //object//, //array//, //string// and so on. These terms should be interpreted with the meaning given to them in [[https://tools.ietf.org/html/rfc7159|RFC 7159]]. Where it would be ambiguous, the terms are prefixed with //JSON//, as in //JSON string// when they are used in that sense.
+
+Following the use of JSON, `.lol` files contain a hierarchy of object of different types. Each of these types are described in their own section in this chapter. An `.lol` file aways contains a single, complete object of type `document`.
+
+
+## Type: `document`.
