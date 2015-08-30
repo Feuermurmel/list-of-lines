@@ -67,7 +67,7 @@ coordinate := [<coordinate-number>, <coordinate-number>]
 
 * In a 3-dimensional file:
 
-{{{             
+{{{       
 coordinate := [<coordinate-number>, <coordinate-number>, <coordinate-number>]
             | [<infinity>, <coordinate-number>, <coordinate-number>]
             | [<coordinate-number>, <infinity>, <coordinate-number>]
