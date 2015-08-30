@@ -12,4 +12,4 @@ This specification makes use of two kinds of numbers to represent all numeric da
 
 == Coordinates
 
-//Coordinates// are used to specify the positions of //vertices//, so they can used to build up simplexes and later general polyhedra. Each coordinate is a tuple of `n` _rational numbers_.
+//Coordinates// are used to specify the positions of //vertices//, so they can used to build up simplexes and later general polyhedra. Each coordinate is a tuple of {{{n}}} _rational numbers_.
